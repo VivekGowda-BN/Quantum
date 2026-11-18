@@ -129,7 +129,7 @@ The site is hosted on Vercel at **[quantum-rvu.vercel.app](https://quantum-rvu.v
 
 | Setting | Value |
 | --- | --- |
-| Framework preset | Create React App (detected) |
+| Framework preset | Other — the CRA build via CRACO |
 | Root Directory | `frontend` |
 | Install Command | `npm install` |
 | Build Command | `npm run build` |

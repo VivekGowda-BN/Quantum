@@ -1,0 +1,98 @@
+{
+  "theme": "Dark and Light Mode Support",
+  "archetype": "Archetype 4: Swiss & High-Contrast",
+  "typography": {
+    "headings": {
+      "font_family": "Cabinet Grotesk",
+      "weights": ["300", "700", "900"],
+      "classes": "font-sans tracking-tight font-bold"
+    },
+    "body": {
+      "font_family": "IBM Plex Sans",
+      "weights": ["400", "500"],
+      "classes": "font-sans leading-relaxed"
+    },
+    "mono_accent": {
+      "font_family": "JetBrains Mono",
+      "classes": "font-mono text-xs uppercase tracking-[0.2em]"
+    }
+  },
+  "colors": {
+    "light": {
+      "background": "#FAFAFA",
+      "foreground": "#0A0A0A",
+      "surface": "#FFFFFF",
+      "border": "rgba(0, 0, 0, 0.1)",
+      "primary": "#002FA7",
+      "primary_foreground": "#FFFFFF",
+      "muted": "#F4F4F5",
+      "muted_foreground": "#71717A"
+    },
+    "dark": {
+      "background": "#0A0A0A",
+      "foreground": "#FAFAFA",
+      "surface": "#121212",
+      "border": "rgba(255, 255, 255, 0.1)",
+      "primary": "#2563EB",
+      "primary_foreground": "#FFFFFF",
+      "muted": "#27272A",
+      "muted_foreground": "#A1A1AA"
+    }
+  },
+  "spacing_and_layout": {
+    "philosophy": "Generous Spacing, Optical Alignment, Crisp Edges",
+    "container_padding": "p-8 md:p-12 lg:p-16",
+    "border_radius": "rounded-none md:rounded-sm",
+    "grids": {
+      "home_bento": "grid grid-cols-1 md:grid-cols-12 gap-8",
+      "resources_grid": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6",
+      "updates_feed": "flex flex-col gap-8 max-w-2xl mx-auto"
+    }
+  },
+  "components": {
+    "navigation": "Sticky nav with glassmorphism (backdrop-blur-xl). Contains Logo ('Quantum'), Links (About, Resources, Updates), and Dark/Light Mode Toggle. Must be visible on desktop.",
+    "footer": "Generous padding (py-20). Contains standard links and a 'Faculty Portal' link with a small lock icon.",
+    "cards": "Flat background, 1px subtle border (border-border), sharp corners. No heavy drop shadows. On hover: slight lift (-translate-y-1) and border color darkening/lightening.",
+    "buttons": "Sharp corners. Primary CTA uses brand color. High contrast text.",
+    "forms": "Shadcn UI inputs. 1px solid borders. Focus state: ring-2 of primary color."
+  },
+  "media": {
+    "hero_background": {
+      "url": "https://images.pexels.com/photos/30547566/pexels-photo-30547566.jpeg",
+      "description": "Abstract futuristic processor representing quantum computing. Use with heavy overlay (e.g. bg-black/60) to ensure text contrast."
+    },
+    "about_chalkboard": {
+      "url": "https://images.unsplash.com/photo-1636466497217-26a8cbeaf0aa",
+      "description": "Physics chalkboard with math equations."
+    },
+    "about_students": {
+      "url": "https://images.pexels.com/photos/5538594/pexels-photo-5538594.jpeg",
+      "description": "Diverse university students on campus representing RV University."
+    }
+  },
+  "pages": {
+    "Home": {
+      "instructions": "Hero section with large 'QUANTUM' text (text-5xl to 6xl+) in Cabinet Grotesk. Subtitle 'RV University Physics & Quantum Computing Club'. High contrast. Call to actions for Resources and Updates. Below hero, a quick Bento grid highlighting the mission and recent announcements."
+    },
+    "About": {
+      "instructions": "Editorial layout. Large typography. Use the chalkboard and students images. Sections for Mission, Faculty Leads, and Club Activities."
+    },
+    "Resources": {
+      "instructions": "Publicly accessible grid of resources. Each card shows title, category (Notes, Textbooks, PPTs), and a download button. Minimalist, tech-forward design."
+    },
+    "Updates": {
+      "instructions": "Social-feed style layout. A central column of update cards. Each card has faculty avatar, name, timestamp (in mono font), message, and an optional image."
+    },
+    "Faculty_Login": {
+      "instructions": "Simple, centered login card with Email and Password inputs. For now, on submit, simply route to the Faculty Dashboard shell."
+    },
+    "Faculty_Dashboard_Shell": {
+      "instructions": "Accessible after login. Simple layout with a sidebar or top sub-nav. Two main forms: 1) Upload Resource (Title, Category select, File input placeholder, Submit) and 2) Post Update (Message textarea, Image URL input, Submit). Purely frontend UI for now."
+    }
+  },
+  "technical_requirements": {
+    "testing": "All interactive elements MUST have data-testid attributes (e.g. data-testid='faculty-login-button').",
+    "icons": "lucide-react",
+    "fonts": "Include Cabinet Grotesk, IBM Plex Sans, and JetBrains Mono from Google Fonts or Fontshare."
+  }
+}
